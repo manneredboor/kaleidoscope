@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<meta httpEquiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta charSet="utf-8" />
+	<link rel="stylesheet" href="reset.css">
+	<style>
+		.filter-wrap {
+			position: relative;
+		}
+
+		.filter-wrap canvas {
+			position: absolute;
+		}
+
+		#kaleido-filter {
+			position: relative;
+			-webkit-mask: -webkit-radial-gradient( center, closest-side, transparent 30%, black 80%);
+			-webkit-mask: radial-gradient( closest-side at center, transparent 50%, black 110%);
+			-webkit-filter: blur(5px);
+			mask: url('#mask-radial');
+			filter: url('#filter');
+		}
+	</style>
+</head>
+
+<body>
+	<div class="filter-wrap">
+		<canvas id="kaleido"></canvas>
+		<canvas id="kaleido-filter"></canvas>
+	</div>
+
+	<svg height="0" width="0">
+		<defs>
+			<mask id="mask-radial">
+				<rect width="400" height="300" fill="url(#g1)"></rect>
+				<radialGradient id="g1" cx="50%" cy="50%" r="50%">
+					<stop stop-color="black" offset="50%" />
+					<stop stop-color="white" offset="110%" />
+				</radialGradient>
+			</mask>
+			<filter id="filter">
+				<feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+			</filter>
+		</defs>
+	</svg>
+</body>
+
+</html>

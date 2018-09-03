@@ -1,0 +1,14 @@
+.awcache/
+node_modules/
+webpack_stats.json
+.DS_Store
+jest/
+build/
+media/
+.swp
+.awcache/
+.env
+admin.password
+secret.key
+*.log
+build.zip

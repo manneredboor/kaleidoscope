@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src/",
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSourceMap": false,
+    "inlineSources": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es6",
+      "es2015.promise",
+      "es2017.object",
+      "es2015.collection",
+      "es2015"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "newLine": "LF",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "outDir": "build",
+    "sourceMap": true,
+    "strictFunctionTypes": false,
+    "target": "es5"
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
