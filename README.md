@@ -1,6 +1,6 @@
 # Kaleidoscope
 
-### [DEMO](http://manneredboor.github.io/kaleidoscope/)
+### [DEMO](https://manneredboor.github.io/kaleidoscope/index.html)
 
 ### [WIKI](https://en.wikipedia.org/wiki/Kaleidoscope)
 
